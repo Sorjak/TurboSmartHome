@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="profile-image col-3">
+        <img src="{{profile.avatar_url}}" class="img-fluid"/>
+    </div>
+    <div class="profile-info col-9">
+        <h1>{{profile}}</h1>
+        <p>{{profile.user.email}}</p>
+        {% if profile.phone_number %}
+            <p>{{profile.phone_number}}</p>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}
