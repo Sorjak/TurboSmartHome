@@ -6,13 +6,13 @@ volumes:
 services:
 
   postgres:
-    build: ./docker/postgres
+    build: ./deploy/docker/postgres
     volumes:
       - turbo_postgres_data:/var/lib/postgresql/data
 
   django:
     build: 
-      dockerfile: ./docker/django/Dockerfile
+      dockerfile: ./deploy/docker/django/Dockerfile
       context: .
     depends_on:
       - postgres

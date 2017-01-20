@@ -1,3 +1,5 @@
+from __future__ import absolute_import, unicode_literals
+
 import os
 import sys
 
@@ -57,10 +59,10 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'turbosmarthome.urls'
+ROOT_URLCONF = 'config.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'turbosmarthome.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 # Internationalization
 
@@ -82,11 +84,10 @@ PHONENUMBER_DEFAULT_REGION = "America"
 
 STATIC_URL = '/static/'
 
-
 # Additional locations of static files
 
 STATICFILES_DIRS = (
-    root('turbosmarthome/assets'),
+    root('../turbosmarthome/assets'),
 )
 
 TEMPLATES = [
@@ -95,7 +96,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
         'DIRS': [
-            root('turbosmarthome/templates'),
+            root('../turbosmarthome/templates'),
         ],
         'OPTIONS': {
             # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-debug
