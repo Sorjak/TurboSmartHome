@@ -3,11 +3,12 @@ import os
 
 
 DEBUG = False
-TEMPLATES['OPTIONS']['debug'] = DEBUG
+#TEMPLATES['OPTIONS']['debug'] = DEBUG
 
-SECRET_KEY = os.environ["SECRET_KEY"]
+#SECRET_KEY = os.environ["SECRET_KEY"]
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
+#ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS = ['home.turbomansion.com']
 
 ADMINS = (
     ('Uli', 'uli@turbomansion.com'),
@@ -19,9 +20,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'turbosmarthome',
-        'USER': os.environ['DB_USER'],
-        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
-        'HOST': os.environ.get('DB_HOST', ''),
-        'PORT': '',
+        'USER': 'turbosmarthome',
+        'PASSWORD': 'WdhhrCAv%8cu',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }

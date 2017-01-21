@@ -10,7 +10,7 @@ from sys import path
 SITE_ROOT = dirname(dirname(abspath(__file__)))
 path.append(SITE_ROOT)
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.production")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.production")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
