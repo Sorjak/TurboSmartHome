@@ -53,11 +53,12 @@ venv
 *.iml
 *.iws
 
-turbosmarthome/settings/local.py
-turbosmarthome/settings/production.py
+config/settings/local.py
+config/settings/production.py
+
+deploy/production/*
 
 # collect static output directory
-turbosmarthome/assets/
 turbosmarthome/static/
 
 .DS_Store
