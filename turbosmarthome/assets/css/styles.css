@@ -1,0 +1,41 @@
+/*! project specific CSS goes here. */
+
+
+body {
+    background: #F5F5F5;
+    color: #333;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar .navbar-text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.content {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    /*flex: 1 1 auto;*/
+    
+}
+
+.content>.row {
+    padding: 1.25rem;
+}
+
+.profile-image {
+    /*width: 150px;*/
+    /*margin-right: 20px;*/
+}
+
+#id_phone_number_0 {
+    width: 200px;
+}
