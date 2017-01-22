@@ -33,7 +33,8 @@ class UserProfileView(TemplateView):
         if not request.user.is_authenticated():
             return redirect('/accounts/login')
         else: 
-            if not request.user.email:
+            p = Profile.objects.get(user=request.user)
+            if not p.active:
                 return redirect('/accounts/update')
 
         return super(UserProfileView, self).dispatch(request, *args, **kwargs)

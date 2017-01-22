@@ -10,7 +10,7 @@ from allauth.socialaccount.models import SocialAccount
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    active = models.BooleanField(default=True)
+    active = models.BooleanField(default=False)
 
     nickname = models.CharField('Nickname', max_length=255, blank=True)
     phone_number = models.CharField('Phone Number', max_length=16, blank=True)
