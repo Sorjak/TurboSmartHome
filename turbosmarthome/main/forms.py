@@ -8,7 +8,7 @@ from turbosmarthome.main.models import Profile
 
 
 class ProfileEditForm(forms.ModelForm):
-    email = forms.EmailField(label="Email", required=True)
+    # email = forms.EmailField(label="Email", required=True)
     class Meta:
         model = Profile
         fields = ['nickname', 'phone_number']
